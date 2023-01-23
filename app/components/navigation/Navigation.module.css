@@ -1,0 +1,11 @@
+.navigation {
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.navigation > ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 24px;
+}
