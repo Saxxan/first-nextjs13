@@ -10,6 +10,10 @@ const links = [
     label: "About",
     route: "/about",
   },
+  {
+    label: "Posts",
+    route: "/posts",
+  },
 ];
 
 export default function Navigation() {
@@ -18,7 +22,9 @@ export default function Navigation() {
       <ul>
         {links.map((link) => (
           <li key={link.route}>
-            <Link href={link.route}>{link.label}</Link>
+            <Link className={styles.navigation__link} href={link.route}>
+              {link.label}
+            </Link>
           </li>
         ))}
       </ul>

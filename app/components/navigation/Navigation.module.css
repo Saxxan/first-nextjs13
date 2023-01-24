@@ -1,6 +1,8 @@
 .navigation {
     width: 90vw;
+    padding: 0 5vw;
     margin: 0 auto;
+    border: 1px solid white;
 }
 
 .navigation > ul {
@@ -8,4 +10,14 @@
     justify-content: flex-end;
     list-style: none;
     gap: 24px;
+}
+
+.navigation__link {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+.navigation__link:hover {
+    text-decoration: underline;
 }

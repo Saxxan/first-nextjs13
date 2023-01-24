@@ -1,0 +1,14 @@
+.postCard {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.postCard__title {
+    font-size: 18px;
+    color: lightskyblue;
+}
+
+.postCard__link {
+    text-decoration: none;
+    color: white;
+}
