@@ -11,10 +11,10 @@ export default async function Comments({ params }) {
   const comments = await fetchPostComments(id);
 
   return (
-    <ul>
+    <ul style={{ fontSize: "13px", listStyle: "none" }}>
       {comments.map((comment) => (
         <li key={comment.id}>
-          <h4>{comment.name}</h4>
+          <h4 style={{ color: "lightgreen" }}>{comment.name.toUpperCase()}</h4>
           <small>{comment.email}</small>
           <p>{comment.body}</p>
         </li>
